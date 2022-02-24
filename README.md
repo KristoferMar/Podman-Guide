@@ -22,9 +22,13 @@ podman run --name mysql-basic \
 </pre>
 
 podman flags: 
+<pre>
 -t is equivalent to --tty, meaning a pseudo-tty (pseudo-terminal) is to be allocated for the container.
 -i is the same as --interactive. When used, standard input is kept open into the container.
 -d, or its long form --detach, means the container runs in the background (detached). Podman then prints the container id.
+
+-l stands for latest
+</pre>
 
 It's also possible to use combinations such as the following to access any given pod 
 <pre>
