@@ -11,6 +11,16 @@ Access a pod
 podman exec -it httpd-basic /bin/bash
 </pre>
 
+Environmant variables:
+- Environment variables are set with the "-e" falg. An example could be the following: 
+
+<pre>
+podman run --name mysql-basic \
+> -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 \
+> -e MYSQL_DATABASE=items -e MYSQL_ROOT_PASSWORD=r00tpa55 \
+> -d registry_name/user_name/image_name:tag
+</pre>
+
 podman flags: 
 -t is equivalent to --tty, meaning a pseudo-tty (pseudo-terminal) is to be allocated for the container.
 -i is the same as --interactive. When used, standard input is kept open into the container.
