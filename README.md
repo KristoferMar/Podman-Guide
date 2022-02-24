@@ -3,7 +3,7 @@
 Run a container from a image in the background with a special tak 
 
 <pre>
-podman run -d -p 8080:80 --name httpd-basic quay.io/your-registry/httpd-parent:2.4
+podman run -d -p 8080:80 --name httpd-basic quay.io/user_name/httpd-parent:2.4
 </pre>
 
 Access a pod
