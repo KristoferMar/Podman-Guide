@@ -54,6 +54,28 @@ It's also possible to use combinations such as the following to access any given
 -it
 </pre>
 
+# Persistent Storage
+
+- This enables us to create a directory outside the container and store files in that can be picked up by another container if we terminate the first one. This way our storage is persited to the host machine and is accessable by the container.
+
+<pre>
+mkdir -pv /home/student/local/mysql
+
+sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
+
+ls -Zd /home/student/local/mysql
+
+podman unshare chown 27:27 /home student/local/mysql
+
+</pre>
+
+# Directories
+How to create nested directories 
+- -v Print shell input lines as they are read.
+- -p for creating "parent" and all underlaying "children" folders.
+<pre>
+mkdir -pv /home/student/local/mysql
+</pre>
 
 # Debugging
 
