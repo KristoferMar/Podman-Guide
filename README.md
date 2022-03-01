@@ -67,7 +67,7 @@ sudo restorecon -R /home/student/local/mysql
 
 ls -Zd /home/student/local/mysql
 
-podman unshare chown 27:27 /home student/local/mysql
+podman unshare chown -Rv 27:27 /home student/local/mysql
 
 </pre>
 
