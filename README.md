@@ -79,6 +79,18 @@ How to create nested directories
 mkdir -pv /home/student/local/mysql
 </pre>
 
+# Linux flags
+
+This flag stands for 'add'
+<pre>
+-a 
+</pre>
+
+This flag stands for 'type'
+<pre>
+-t
+</pre>
+
 # Debugging
 
 ## Logging 
