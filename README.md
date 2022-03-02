@@ -62,7 +62,6 @@ It's also possible to use combinations such as the following to access any given
 mkdir -pv /home/student/local/mysql
 
 sudo semanage fcontext -a -t container_file_t '/home/student/local/mysql(/.*)?'
-
 sudo restorecon -R /home/student/local/mysql
 
 ls -Zd /home/student/local/mysql
